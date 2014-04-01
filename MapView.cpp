@@ -73,6 +73,8 @@ MapView::~MapView(void)
 {
 }
 
+
+// this function is just for test
 void MapView::DrawLine()
 {
 	wxClientDC dc(this);
@@ -95,8 +97,8 @@ void MapView::DrawLine()
 void MapView::OnPaint(wxPaintEvent & event)
 {
 	wxPaintDC dc(this);
-	wxRect mm_Rect = this->GetRect(); //»ñÈ¡»æÍ¼ÇøÓò·¶Î§
-
+	wxRect mm_Rect = this->GetRect(); // get the drawing area
+	
 	// 
 	wxRect m_Rect(mm_Rect);
 
